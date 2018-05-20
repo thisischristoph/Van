@@ -7,12 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AF588F002271498CADD8816 /* Pods_Van.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DD3E6CAA4D707F3AA159FD /* Pods_Van.framework */; };
+		DF38F65E20B1FEB400ADE695 /* ComparisonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38F65D20B1FEB400ADE695 /* ComparisonHelper.swift */; };
+		DF462F6320B15E110045FDFB /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462F6220B15E110045FDFB /* MapManager.swift */; };
+		DF462F6520B16F8F0045FDFB /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462F6420B16F8F0045FDFB /* MapPin.swift */; };
+		DF462F6720B17B260045FDFB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462F6620B17B260045FDFB /* Location.swift */; };
+		DF5441B320AE1AF00072604A /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441B220AE1AF00072604A /* FirebaseManager.swift */; };
+		DF5441B520AE1CEF0072604A /* GeoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441B420AE1CEF0072604A /* GeoManager.swift */; };
+		DF5441B820AE1DC20072604A /* GeoKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441B720AE1DC20072604A /* GeoKeys.swift */; };
+		DF5441BA20AF544E0072604A /* VanManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441B920AF544E0072604A /* VanManager.swift */; };
+		DF5441BF20AF55220072604A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441BE20AF55220072604A /* User.swift */; };
+		DF5441C120AF58180072604A /* Van.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441C020AF58180072604A /* Van.swift */; };
+		DF5441C320AF62FE0072604A /* OpeningTimes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441C220AF62FE0072604A /* OpeningTimes.swift */; };
+		DF5441C520AF630B0072604A /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441C420AF630B0072604A /* Day.swift */; };
+		DF5441C820AF68B70072604A /* UserKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441C720AF68B70072604A /* UserKeys.swift */; };
+		DF5441CA20AF69810072604A /* VanKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441C920AF69810072604A /* VanKeys.swift */; };
+		DF5441CC20AF6A200072604A /* OpeningTimesKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441CB20AF6A200072604A /* OpeningTimesKeys.swift */; };
+		DF5441CE20AF6ABD0072604A /* DayKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441CD20AF6ABD0072604A /* DayKeys.swift */; };
+		DF5441D220AF70BC0072604A /* ModButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441D120AF70BC0072604A /* ModButton.swift */; };
+		DF5441D420AF7A470072604A /* VanExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441D320AF7A470072604A /* VanExtension.swift */; };
 		DFD4555C20AA1023000F4AD0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD4555B20AA1023000F4AD0 /* AppDelegate.swift */; };
 		DFD4555E20AA1023000F4AD0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD4555D20AA1023000F4AD0 /* ViewController.swift */; };
 		DFD4556120AA1023000F4AD0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD4555F20AA1023000F4AD0 /* Main.storyboard */; };
 		DFD4556320AA1025000F4AD0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFD4556220AA1025000F4AD0 /* Assets.xcassets */; };
 		DFD4556620AA1025000F4AD0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DFD4556420AA1025000F4AD0 /* LaunchScreen.storyboard */; };
 		DFD4557120AA1025000F4AD0 /* VanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD4557020AA1025000F4AD0 /* VanTests.swift */; };
+		DFD4557E20AA1F49000F4AD0 /* MapKitExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD4557D20AA1F49000F4AD0 /* MapKitExtension.swift */; };
+		DFD4558020AB4952000F4AD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFD4557F20AB4952000F4AD0 /* GoogleService-Info.plist */; };
+		DFD4558320AB8A3E000F4AD0 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFD4558220AB8A3E000F4AD0 /* UserManager.swift */; };
+		EE273185F9980CFC92911C63 /* Pods_VanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC1BB0BDF617C4FA13BC27F /* Pods_VanTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +49,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220D26BD8E0433EA5428522A /* Pods-Van.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Van.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Van/Pods-Van.debug.xcconfig"; sourceTree = "<group>"; };
+		22FDE393B0C9B99712EC63D8 /* Pods-VanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VanTests/Pods-VanTests.release.xcconfig"; sourceTree = "<group>"; };
+		809BA403C1489E2E48D15E9D /* Pods-Van.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Van.release.xcconfig"; path = "Pods/Target Support Files/Pods-Van/Pods-Van.release.xcconfig"; sourceTree = "<group>"; };
+		96CDCD31081675FA88F0C05B /* Pods-VanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VanTests/Pods-VanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BEC1BB0BDF617C4FA13BC27F /* Pods_VanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF38F65D20B1FEB400ADE695 /* ComparisonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisonHelper.swift; sourceTree = "<group>"; };
+		DF462F6220B15E110045FDFB /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		DF462F6420B16F8F0045FDFB /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		DF462F6620B17B260045FDFB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		DF5441B220AE1AF00072604A /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		DF5441B420AE1CEF0072604A /* GeoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoManager.swift; sourceTree = "<group>"; };
+		DF5441B720AE1DC20072604A /* GeoKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoKeys.swift; sourceTree = "<group>"; };
+		DF5441B920AF544E0072604A /* VanManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanManager.swift; sourceTree = "<group>"; };
+		DF5441BE20AF55220072604A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DF5441C020AF58180072604A /* Van.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Van.swift; sourceTree = "<group>"; };
+		DF5441C220AF62FE0072604A /* OpeningTimes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningTimes.swift; sourceTree = "<group>"; };
+		DF5441C420AF630B0072604A /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		DF5441C720AF68B70072604A /* UserKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserKeys.swift; sourceTree = "<group>"; };
+		DF5441C920AF69810072604A /* VanKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanKeys.swift; sourceTree = "<group>"; };
+		DF5441CB20AF6A200072604A /* OpeningTimesKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningTimesKeys.swift; sourceTree = "<group>"; };
+		DF5441CD20AF6ABD0072604A /* DayKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayKeys.swift; sourceTree = "<group>"; };
+		DF5441D120AF70BC0072604A /* ModButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModButton.swift; sourceTree = "<group>"; };
+		DF5441D320AF7A470072604A /* VanExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanExtension.swift; sourceTree = "<group>"; };
 		DFD4555820AA1023000F4AD0 /* Van.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Van.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD4555B20AA1023000F4AD0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DFD4555D20AA1023000F4AD0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +82,10 @@
 		DFD4556C20AA1025000F4AD0 /* VanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFD4557020AA1025000F4AD0 /* VanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanTests.swift; sourceTree = "<group>"; };
 		DFD4557220AA1025000F4AD0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFD4557D20AA1F49000F4AD0 /* MapKitExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitExtension.swift; sourceTree = "<group>"; };
+		DFD4557F20AB4952000F4AD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DFD4558220AB8A3E000F4AD0 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		F0DD3E6CAA4D707F3AA159FD /* Pods_Van.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Van.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF588F002271498CADD8816 /* Pods_Van.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +101,118 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE273185F9980CFC92911C63 /* Pods_VanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5139E0AE873340D3E2413595 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				220D26BD8E0433EA5428522A /* Pods-Van.debug.xcconfig */,
+				809BA403C1489E2E48D15E9D /* Pods-Van.release.xcconfig */,
+				96CDCD31081675FA88F0C05B /* Pods-VanTests.debug.xcconfig */,
+				22FDE393B0C9B99712EC63D8 /* Pods-VanTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DF38F65C20B1FE8900ADE695 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DF38F65D20B1FEB400ADE695 /* ComparisonHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DF462F6020B0F0F70045FDFB /* Van */ = {
+			isa = PBXGroup;
+			children = (
+				DF5441C020AF58180072604A /* Van.swift */,
+				DF5441C220AF62FE0072604A /* OpeningTimes.swift */,
+				DF5441C420AF630B0072604A /* Day.swift */,
+				DF462F6420B16F8F0045FDFB /* MapPin.swift */,
+				DF462F6620B17B260045FDFB /* Location.swift */,
+			);
+			path = Van;
+			sourceTree = "<group>";
+		};
+		DF462F6120B0F1000045FDFB /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DF5441BE20AF55220072604A /* User.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		DF5441B620AE1D810072604A /* Keys */ = {
+			isa = PBXGroup;
+			children = (
+				DF5441B720AE1DC20072604A /* GeoKeys.swift */,
+				DF5441C620AF68900072604A /* Model Keys */,
+			);
+			path = Keys;
+			sourceTree = "<group>";
+		};
+		DF5441BB20AF54610072604A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DFD4555D20AA1023000F4AD0 /* ViewController.swift */,
+				DFD4555F20AA1023000F4AD0 /* Main.storyboard */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DF5441BC20AF54720072604A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DF462F6120B0F1000045FDFB /* User */,
+				DF462F6020B0F0F70045FDFB /* Van */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DF5441BD20AF54AD0072604A /* Extras */ = {
+			isa = PBXGroup;
+			children = (
+				DFD4556420AA1025000F4AD0 /* LaunchScreen.storyboard */,
+				DFD4556720AA1025000F4AD0 /* Info.plist */,
+				DFD4557F20AB4952000F4AD0 /* GoogleService-Info.plist */,
+			);
+			path = Extras;
+			sourceTree = "<group>";
+		};
+		DF5441C620AF68900072604A /* Model Keys */ = {
+			isa = PBXGroup;
+			children = (
+				DF5441C720AF68B70072604A /* UserKeys.swift */,
+				DF5441C920AF69810072604A /* VanKeys.swift */,
+				DF5441CB20AF6A200072604A /* OpeningTimesKeys.swift */,
+				DF5441CD20AF6ABD0072604A /* DayKeys.swift */,
+			);
+			path = "Model Keys";
+			sourceTree = "<group>";
+		};
+		DF5441D020AF709E0072604A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF5441D120AF70BC0072604A /* ModButton.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
 		DFD4554F20AA1023000F4AD0 = {
 			isa = PBXGroup;
 			children = (
 				DFD4555A20AA1023000F4AD0 /* Van */,
+				DFD4556220AA1025000F4AD0 /* Assets.xcassets */,
+				DF5441BD20AF54AD0072604A /* Extras */,
 				DFD4556F20AA1025000F4AD0 /* VanTests */,
 				DFD4555920AA1023000F4AD0 /* Products */,
+				5139E0AE873340D3E2413595 /* Pods */,
+				F416ADF247265CF880EA09A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +229,13 @@
 			isa = PBXGroup;
 			children = (
 				DFD4555B20AA1023000F4AD0 /* AppDelegate.swift */,
-				DFD4555D20AA1023000F4AD0 /* ViewController.swift */,
-				DFD4555F20AA1023000F4AD0 /* Main.storyboard */,
-				DFD4556220AA1025000F4AD0 /* Assets.xcassets */,
-				DFD4556420AA1025000F4AD0 /* LaunchScreen.storyboard */,
-				DFD4556720AA1025000F4AD0 /* Info.plist */,
+				DF5441BC20AF54720072604A /* Models */,
+				DF5441BB20AF54610072604A /* View Controllers */,
+				DFD4558120AB8A24000F4AD0 /* Managers */,
+				DF5441B620AE1D810072604A /* Keys */,
+				DF5441D020AF709E0072604A /* Custom Views */,
+				DF38F65C20B1FE8900ADE695 /* Helpers */,
+				DFD4557B20AA1F26000F4AD0 /* Extensions */,
 			);
 			path = Van;
 			sourceTree = "<group>";
@@ -96,6 +249,36 @@
 			path = VanTests;
 			sourceTree = "<group>";
 		};
+		DFD4557B20AA1F26000F4AD0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DFD4557D20AA1F49000F4AD0 /* MapKitExtension.swift */,
+				DF5441D320AF7A470072604A /* VanExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DFD4558120AB8A24000F4AD0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DFD4558220AB8A3E000F4AD0 /* UserManager.swift */,
+				DF5441B220AE1AF00072604A /* FirebaseManager.swift */,
+				DF5441B420AE1CEF0072604A /* GeoManager.swift */,
+				DF5441B920AF544E0072604A /* VanManager.swift */,
+				DF462F6220B15E110045FDFB /* MapManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		F416ADF247265CF880EA09A2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0DD3E6CAA4D707F3AA159FD /* Pods_Van.framework */,
+				BEC1BB0BDF617C4FA13BC27F /* Pods_VanTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +286,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFD4557520AA1025000F4AD0 /* Build configuration list for PBXNativeTarget "Van" */;
 			buildPhases = (
+				FCB7354024159F45B42AED86 /* [CP] Check Pods Manifest.lock */,
 				DFD4555420AA1023000F4AD0 /* Sources */,
 				DFD4555520AA1023000F4AD0 /* Frameworks */,
 				DFD4555620AA1023000F4AD0 /* Resources */,
+				7C3AAE0C49EA65763E46C5A2 /* [CP] Embed Pods Frameworks */,
+				198C10413C8AF464045F912C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +306,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFD4557820AA1025000F4AD0 /* Build configuration list for PBXNativeTarget "VanTests" */;
 			buildPhases = (
+				1E8ECA0646AE92AEF5C15448 /* [CP] Check Pods Manifest.lock */,
 				DFD4556820AA1025000F4AD0 /* Sources */,
 				DFD4556920AA1025000F4AD0 /* Frameworks */,
 				DFD4556A20AA1025000F4AD0 /* Resources */,
+				C042153C8CE7D12130BF476B /* [CP] Embed Pods Frameworks */,
+				C0254AF0B4A67957DF7CA58B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -178,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD4556620AA1025000F4AD0 /* LaunchScreen.storyboard in Resources */,
+				DFD4558020AB4952000F4AD0 /* GoogleService-Info.plist in Resources */,
 				DFD4556320AA1025000F4AD0 /* Assets.xcassets in Resources */,
 				DFD4556120AA1023000F4AD0 /* Main.storyboard in Resources */,
 			);
@@ -192,13 +382,141 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		198C10413C8AF464045F912C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Van/Pods-Van-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E8ECA0646AE92AEF5C15448 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C3AAE0C49EA65763E46C5A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Van/Pods-Van-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GeoFire/GeoFire.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GeoFire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Van/Pods-Van-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0254AF0B4A67957DF7CA58B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VanTests/Pods-VanTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C042153C8CE7D12130BF476B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VanTests/Pods-VanTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCB7354024159F45B42AED86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Van-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DFD4555420AA1023000F4AD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF5441CC20AF6A200072604A /* OpeningTimesKeys.swift in Sources */,
 				DFD4555E20AA1023000F4AD0 /* ViewController.swift in Sources */,
+				DF462F6320B15E110045FDFB /* MapManager.swift in Sources */,
+				DF5441CE20AF6ABD0072604A /* DayKeys.swift in Sources */,
+				DF5441C120AF58180072604A /* Van.swift in Sources */,
+				DF5441C520AF630B0072604A /* Day.swift in Sources */,
+				DF5441B820AE1DC20072604A /* GeoKeys.swift in Sources */,
+				DF5441C820AF68B70072604A /* UserKeys.swift in Sources */,
+				DF5441BF20AF55220072604A /* User.swift in Sources */,
 				DFD4555C20AA1023000F4AD0 /* AppDelegate.swift in Sources */,
+				DF5441BA20AF544E0072604A /* VanManager.swift in Sources */,
+				DF5441C320AF62FE0072604A /* OpeningTimes.swift in Sources */,
+				DF5441D220AF70BC0072604A /* ModButton.swift in Sources */,
+				DF462F6720B17B260045FDFB /* Location.swift in Sources */,
+				DF5441B320AE1AF00072604A /* FirebaseManager.swift in Sources */,
+				DF5441B520AE1CEF0072604A /* GeoManager.swift in Sources */,
+				DF38F65E20B1FEB400ADE695 /* ComparisonHelper.swift in Sources */,
+				DFD4558320AB8A3E000F4AD0 /* UserManager.swift in Sources */,
+				DF462F6520B16F8F0045FDFB /* MapPin.swift in Sources */,
+				DF5441D420AF7A470072604A /* VanExtension.swift in Sources */,
+				DFD4557E20AA1F49000F4AD0 /* MapKitExtension.swift in Sources */,
+				DF5441CA20AF69810072604A /* VanKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,11 +674,12 @@
 		};
 		DFD4557620AA1025000F4AD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 220D26BD8E0433EA5428522A /* Pods-Van.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B6P6U8XVQ9;
-				INFOPLIST_FILE = Van/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Extras/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -374,11 +693,12 @@
 		};
 		DFD4557720AA1025000F4AD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 809BA403C1489E2E48D15E9D /* Pods-Van.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B6P6U8XVQ9;
-				INFOPLIST_FILE = Van/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Extras/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -392,6 +712,7 @@
 		};
 		DFD4557920AA1025000F4AD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96CDCD31081675FA88F0C05B /* Pods-VanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -413,6 +734,7 @@
 		};
 		DFD4557A20AA1025000F4AD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22FDE393B0C9B99712EC63D8 /* Pods-VanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

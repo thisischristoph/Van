@@ -1,0 +1,42 @@
+//
+//  MapManager.swift
+//  Van
+//
+//  Created by Christopher Harrison on 20/05/2018.
+//  Copyright © 2018 Christopher Harrison. All rights reserved.
+//
+
+import Foundation
+import MapKit
+
+struct MapManager {
+    
+    static var shared = MapManager()
+    
+    var annotations: [MKAnnotation] = []
+    
+    func updateAnnotations(on map: MKMapView) {
+        DispatchQueue.main.async {
+            let sequence = diff(map.annotations, self.annotations, with: { (map, new) -> Bool in
+                map.title == new.title &&
+                map.subtitle == new.subtitle &&
+                map.coordinate.latitude == new.coordinate.latitude &&
+                map.coordinate.longitude == new.coordinate.longitude
+            })
+            map.removeAnnotations(sequence.removed)
+            map.addAnnotations(sequence.inserted)
+        }
+    }
+    
+    func createAnnotations(completion: @escaping () -> Void) {
+        var newAnnotations: [MKAnnotation] = []
+        GeoManager.shared.locations.forEach { (location) in
+            if let van = VanManager.shared.getVan(for: location.key) {
+                newAnnotations.append(MapPin(coordinate: location.location.coordinate, title: van.name, subtitle: van.key))
+            }
+        }
+        MapManager.shared.annotations = newAnnotations
+        completion()
+    }
+    
+}
