@@ -12,5 +12,4 @@ struct UserManager {
     
     static var shared = UserManager()
     
-    var userLocation: CLLocation = CLLocation(latitude: 0, longitude: 0)
 }

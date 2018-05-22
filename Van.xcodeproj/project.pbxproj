@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4AF588F002271498CADD8816 /* Pods_Van.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DD3E6CAA4D707F3AA159FD /* Pods_Van.framework */; };
 		DF38F65E20B1FEB400ADE695 /* ComparisonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38F65D20B1FEB400ADE695 /* ComparisonHelper.swift */; };
+		DF38F66020B36BA500ADE695 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38F65F20B36BA500ADE695 /* LocationManager.swift */; };
 		DF462F6320B15E110045FDFB /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462F6220B15E110045FDFB /* MapManager.swift */; };
 		DF462F6520B16F8F0045FDFB /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462F6420B16F8F0045FDFB /* MapPin.swift */; };
 		DF462F6720B17B260045FDFB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462F6620B17B260045FDFB /* Location.swift */; };
@@ -55,6 +56,7 @@
 		96CDCD31081675FA88F0C05B /* Pods-VanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VanTests/Pods-VanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEC1BB0BDF617C4FA13BC27F /* Pods_VanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF38F65D20B1FEB400ADE695 /* ComparisonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisonHelper.swift; sourceTree = "<group>"; };
+		DF38F65F20B36BA500ADE695 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		DF462F6220B15E110045FDFB /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
 		DF462F6420B16F8F0045FDFB /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
 		DF462F6620B17B260045FDFB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 				DF5441B420AE1CEF0072604A /* GeoManager.swift */,
 				DF5441B920AF544E0072604A /* VanManager.swift */,
 				DF462F6220B15E110045FDFB /* MapManager.swift */,
+				DF38F65F20B36BA500ADE695 /* LocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				DF5441C120AF58180072604A /* Van.swift in Sources */,
 				DF5441C520AF630B0072604A /* Day.swift in Sources */,
 				DF5441B820AE1DC20072604A /* GeoKeys.swift in Sources */,
+				DF38F66020B36BA500ADE695 /* LocationManager.swift in Sources */,
 				DF5441C820AF68B70072604A /* UserKeys.swift in Sources */,
 				DF5441BF20AF55220072604A /* User.swift in Sources */,
 				DFD4555C20AA1023000F4AD0 /* AppDelegate.swift in Sources */,

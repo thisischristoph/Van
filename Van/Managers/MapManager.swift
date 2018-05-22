@@ -15,9 +15,8 @@ struct MapManager {
     
     var annotations: [MKAnnotation] = []
     
-    func updateAnnotations(on map: MKMapView) {
-        DispatchQueue.main.async {
-            let sequence = diff(map.annotations, self.annotations, with: { (map, new) -> Bool in
+    func update(_ map: MKMapView) {
+            let sequence = diff(map.annotations, MapManager.shared.annotations, with: { (map, new) -> Bool in
                 map.title == new.title &&
                 map.subtitle == new.subtitle &&
                 map.coordinate.latitude == new.coordinate.latitude &&
@@ -25,10 +24,11 @@ struct MapManager {
             })
             map.removeAnnotations(sequence.removed)
             map.addAnnotations(sequence.inserted)
-        }
+
+
     }
     
-    func createAnnotations(completion: @escaping () -> Void) {
+    func updateAnnotations(completion: @escaping () -> Void) {
         var newAnnotations: [MKAnnotation] = []
         GeoManager.shared.locations.forEach { (location) in
             if let van = VanManager.shared.getVan(for: location.key) {

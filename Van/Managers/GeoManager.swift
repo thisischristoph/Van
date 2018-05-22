@@ -27,22 +27,45 @@ struct GeoManager {
     func getLocation(for key: String, completion: @escaping () -> Void) {
         vanGeoRef.getLocationForKey(key) { (location, error) in
             if (error != nil) {
-                print("An error occurred getting the location for \"firebase-hq\": \(String(describing: error?.localizedDescription))")
+                print(String(describing: error?.localizedDescription))
             } else if (location != nil) {
-                print("Location for \"firebase-hq\" is [\(String(describing: location?.coordinate.latitude)), \(String(describing: location?.coordinate.longitude))]")
-                self.updateLocations(with: Location(key: key, location: location!))
+                self.updateLocations(with: Location(key: key, location: location!)){ }
                 completion()
             } else {
-                print("GeoFire does not contain a location for \"firebase-hq\"")
+                print("GeoFire does not contain a location for \(key)")
             }
         }
     }
     
-    func updateLocations(with location: Location) {
+    func updateLocations(with location: Location, maintainLocation: Bool = true, completion: @escaping () -> Void) {
         var updatedLocations = GeoManager.shared.locations.filter { (oldLocation) -> Bool in
             oldLocation.key != location.key
         }
-        updatedLocations.append(location)
+        if maintainLocation {
+           updatedLocations.append(location)
+        }
         GeoManager.shared.locations = updatedLocations
+        completion()
+    }
+    
+    func observeVanLocations(for map: MKMapView, in radius: Double) {
+        let query = vanGeoRef.query(at: LocationManager.shared.userLocation, withRadius: radius)
+        query.observe(.keyEntered) { (key, location) in
+            self.update(map, key, location)
+        }
+        query.observe(.keyExited) { (key, location) in
+            self.update(map, key, location, track: false)
+        }
+        query.observe(.keyMoved) { (key, location) in
+            self.update(map, key, location)
+        }
+    }
+    
+    func update(_ map: MKMapView, _ key: String, _ location: CLLocation, track: Bool = true) {
+        GeoManager.shared.updateLocations(with: Location(key: key, location: location), maintainLocation: track) {
+            MapManager.shared.updateAnnotations {
+                MapManager.shared.update(map)
+            }
+        }
     }
 }

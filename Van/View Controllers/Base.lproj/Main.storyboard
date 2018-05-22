@@ -25,34 +25,6 @@
                                     <outletCollection property="gestureRecognizers" destination="pen-wa-lz0" appends="YES" id="R1z-KV-tbd"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUJ-b4-qws" customClass="ModButton" customModule="Van" customModuleProvider="target">
-                                <rect key="frame" x="151" y="587" width="72" height="30"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="  Add van  ">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="0.29999999999999999"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="3" height="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="8"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="addVanButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eZi-uL-eUh"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -60,8 +32,6 @@
                             <constraint firstItem="zYH-Xf-b6C" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="emw-rP-zPK"/>
                             <constraint firstItem="zYH-Xf-b6C" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="iKJ-Z1-3Se"/>
                             <constraint firstItem="zYH-Xf-b6C" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottom" id="kgp-kM-qUz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UUJ-b4-qws" secondAttribute="bottom" constant="50" id="qef-Jl-pwZ"/>
-                            <constraint firstItem="UUJ-b4-qws" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wfE-u7-AXp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
