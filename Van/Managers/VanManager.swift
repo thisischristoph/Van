@@ -33,12 +33,12 @@ struct VanManager {
                 friday: Day(key: OpeningTimesKeys.friday.rawValue, opens: 5, closes: 8, closed: false),
                 saturday: Day(key: OpeningTimesKeys.saturday.rawValue, opens: 6, closes: 9, closed: true),
                 sunday: Day(key: OpeningTimesKeys.sunday.rawValue, opens: 7, closes: 9, closed: false)
-            )
+            ),
+            category: .fishChips
         )
         newVanRef.setValue(van.toDictionary())
         GeoManager.shared.setVanLocation(location: coordiates, uid: newVanRef.key)
     }
-    
     
     func getVan(for key: String) -> Van? {
         return vans.filter({ (van) -> Bool in

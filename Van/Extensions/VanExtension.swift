@@ -14,7 +14,8 @@ extension Van {
         var van: [String : Any] = [
             VanKeys.uid.rawValue : self.uid,
             VanKeys.name.rawValue : self.name,
-            VanKeys.profilePicURL.rawValue : self.profilePicURL
+            VanKeys.profilePicURL.rawValue : self.profilePicURL,
+            VanKeys.category.rawValue : VanCategory.fishChips.rawValue
         ]
         let openingTimesMonday: [String : Any] = [
             DayKeys.opens.rawValue : self.openingTimes.monday.opens ?? 0,

@@ -16,6 +16,7 @@ struct Van {
     let name: String
     let profilePicURL: String
     let openingTimes: OpeningTimes
+    let category: VanCategory
     let ref: DatabaseReference?
     
     init(
@@ -23,13 +24,15 @@ struct Van {
         uid: String,
         name: String,
         profilePicURL: String,
-        openingTimes: OpeningTimes
+        openingTimes: OpeningTimes,
+        category: VanCategory
         ) {
         self.key = key
         self.uid = uid
         self.name = name
         self.profilePicURL = profilePicURL
         self.openingTimes = openingTimes
+        self.category = category
         self.ref = nil
     }
     
@@ -40,6 +43,7 @@ struct Van {
         name = snapshotValue[VanKeys.name.rawValue] as! String
         profilePicURL = snapshotValue[VanKeys.profilePicURL.rawValue] as! String
         openingTimes = OpeningTimes(snapshot: snapshot.childSnapshot(forPath: VanKeys.openingTimes.rawValue))
+        category = (snapshotValue[VanKeys.category.rawValue] as! String).vanCategory()
         ref = snapshot.ref
     }
 }

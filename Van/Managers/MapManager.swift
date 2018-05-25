@@ -32,7 +32,13 @@ struct MapManager {
         var newAnnotations: [MKAnnotation] = []
         GeoManager.shared.locations.forEach { (location) in
             if let van = VanManager.shared.getVan(for: location.key) {
-                newAnnotations.append(MapPin(coordinate: location.location.coordinate, title: van.name, subtitle: van.key))
+                let annotation = MapPin(
+                    coordinate: location.location.coordinate,
+                    title: van.name,
+                    subtitle: van.key
+                )
+                annotation.image = van.category.image
+                newAnnotations.append(annotation)
             }
         }
         MapManager.shared.annotations = newAnnotations

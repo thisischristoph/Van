@@ -13,10 +13,5 @@ enum VanKeys: String {
     case username = "username"
     case profilePicURL = "profilePicURL"
     case openingTimes = "openingTimes"
-}
-
-enum VanTypeKeys: String {
-    case iceCream = "Ice Cream Van"
-    case fishChips = "Fish and Chips"
-    case kebab = "Kebab"
+    case category = "category"
 }
