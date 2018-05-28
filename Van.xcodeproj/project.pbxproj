@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		4AF588F002271498CADD8816 /* Pods_Van.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0DD3E6CAA4D707F3AA159FD /* Pods_Van.framework */; };
-		DF1F889420B783F800D9D087 /* AnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F889320B783F800D9D087 /* AnnotationView.swift */; };
+		DF1F889620BB196200D9D087 /* VanAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F889520BB196200D9D087 /* VanAnnotationView.swift */; };
+		DF1F889A20BB3CA900D9D087 /* VanMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1F889920BB3CA900D9D087 /* VanMapView.swift */; };
+		DF1F889C20BB3CB800D9D087 /* VanMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF1F889B20BB3CB800D9D087 /* VanMapView.xib */; };
 		DF38F65E20B1FEB400ADE695 /* ComparisonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38F65D20B1FEB400ADE695 /* ComparisonHelper.swift */; };
 		DF38F66020B36BA500ADE695 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38F65F20B36BA500ADE695 /* LocationManager.swift */; };
 		DF38F66320B61C7500ADE695 /* LocationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38F66220B61C7500ADE695 /* LocationProtocol.swift */; };
 		DF38F66520B73B4D00ADE695 /* VanCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38F66420B73B4D00ADE695 /* VanCategories.swift */; };
 		DF38F66720B74B3D00ADE695 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF38F66620B74B3D00ADE695 /* StringExtension.swift */; };
 		DF462F6320B15E110045FDFB /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462F6220B15E110045FDFB /* MapManager.swift */; };
-		DF462F6520B16F8F0045FDFB /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462F6420B16F8F0045FDFB /* MapPin.swift */; };
+		DF462F6520B16F8F0045FDFB /* VanAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462F6420B16F8F0045FDFB /* VanAnnotation.swift */; };
 		DF462F6720B17B260045FDFB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF462F6620B17B260045FDFB /* Location.swift */; };
 		DF5441B320AE1AF00072604A /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441B220AE1AF00072604A /* FirebaseManager.swift */; };
 		DF5441B520AE1CEF0072604A /* GeoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5441B420AE1CEF0072604A /* GeoManager.swift */; };
@@ -59,14 +61,16 @@
 		809BA403C1489E2E48D15E9D /* Pods-Van.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Van.release.xcconfig"; path = "Pods/Target Support Files/Pods-Van/Pods-Van.release.xcconfig"; sourceTree = "<group>"; };
 		96CDCD31081675FA88F0C05B /* Pods-VanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VanTests/Pods-VanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BEC1BB0BDF617C4FA13BC27F /* Pods_VanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF1F889320B783F800D9D087 /* AnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationView.swift; sourceTree = "<group>"; };
+		DF1F889520BB196200D9D087 /* VanAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanAnnotationView.swift; sourceTree = "<group>"; };
+		DF1F889920BB3CA900D9D087 /* VanMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanMapView.swift; sourceTree = "<group>"; };
+		DF1F889B20BB3CB800D9D087 /* VanMapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VanMapView.xib; sourceTree = "<group>"; };
 		DF38F65D20B1FEB400ADE695 /* ComparisonHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComparisonHelper.swift; sourceTree = "<group>"; };
 		DF38F65F20B36BA500ADE695 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		DF38F66220B61C7500ADE695 /* LocationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationProtocol.swift; sourceTree = "<group>"; };
 		DF38F66420B73B4D00ADE695 /* VanCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanCategories.swift; sourceTree = "<group>"; };
 		DF38F66620B74B3D00ADE695 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		DF462F6220B15E110045FDFB /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
-		DF462F6420B16F8F0045FDFB /* MapPin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		DF462F6420B16F8F0045FDFB /* VanAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanAnnotation.swift; sourceTree = "<group>"; };
 		DF462F6620B17B260045FDFB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		DF5441B220AE1AF00072604A /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		DF5441B420AE1CEF0072604A /* GeoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoManager.swift; sourceTree = "<group>"; };
@@ -132,9 +136,26 @@
 		DF1F889220B783E800D9D087 /* Annotations */ = {
 			isa = PBXGroup;
 			children = (
-				DF1F889320B783F800D9D087 /* AnnotationView.swift */,
+				DF1F889520BB196200D9D087 /* VanAnnotationView.swift */,
 			);
 			path = Annotations;
+			sourceTree = "<group>";
+		};
+		DF1F889720BB3C0800D9D087 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DF1F889820BB3C1600D9D087 /* MapViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DF1F889820BB3C1600D9D087 /* MapViews */ = {
+			isa = PBXGroup;
+			children = (
+				DF1F889920BB3CA900D9D087 /* VanMapView.swift */,
+				DF1F889B20BB3CB800D9D087 /* VanMapView.xib */,
+			);
+			path = MapViews;
 			sourceTree = "<group>";
 		};
 		DF38F65C20B1FE8900ADE695 /* Helpers */ = {
@@ -159,7 +180,7 @@
 				DF5441C020AF58180072604A /* Van.swift */,
 				DF5441C220AF62FE0072604A /* OpeningTimes.swift */,
 				DF5441C420AF630B0072604A /* Day.swift */,
-				DF462F6420B16F8F0045FDFB /* MapPin.swift */,
+				DF462F6420B16F8F0045FDFB /* VanAnnotation.swift */,
 				DF462F6620B17B260045FDFB /* Location.swift */,
 			);
 			path = Van;
@@ -186,6 +207,7 @@
 		DF5441BB20AF54610072604A /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				DF1F889720BB3C0800D9D087 /* Views */,
 				DF1F889220B783E800D9D087 /* Annotations */,
 				DFD4555D20AA1023000F4AD0 /* ViewController.swift */,
 				DFD4555F20AA1023000F4AD0 /* Main.storyboard */,
@@ -398,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFD4556620AA1025000F4AD0 /* LaunchScreen.storyboard in Resources */,
+				DF1F889C20BB3CB800D9D087 /* VanMapView.xib in Resources */,
 				DFD4558020AB4952000F4AD0 /* GoogleService-Info.plist in Resources */,
 				DFD4556320AA1025000F4AD0 /* Assets.xcassets in Resources */,
 				DFD4556120AA1023000F4AD0 /* Main.storyboard in Resources */,
@@ -527,7 +550,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF5441CC20AF6A200072604A /* OpeningTimesKeys.swift in Sources */,
-				DF1F889420B783F800D9D087 /* AnnotationView.swift in Sources */,
 				DFD4555E20AA1023000F4AD0 /* ViewController.swift in Sources */,
 				DF462F6320B15E110045FDFB /* MapManager.swift in Sources */,
 				DF5441CE20AF6ABD0072604A /* DayKeys.swift in Sources */,
@@ -536,6 +558,7 @@
 				DF5441C520AF630B0072604A /* Day.swift in Sources */,
 				DF5441B820AE1DC20072604A /* GeoKeys.swift in Sources */,
 				DF38F66020B36BA500ADE695 /* LocationManager.swift in Sources */,
+				DF1F889A20BB3CA900D9D087 /* VanMapView.swift in Sources */,
 				DF5441C820AF68B70072604A /* UserKeys.swift in Sources */,
 				DF5441BF20AF55220072604A /* User.swift in Sources */,
 				DFD4555C20AA1023000F4AD0 /* AppDelegate.swift in Sources */,
@@ -547,7 +570,8 @@
 				DF5441B520AE1CEF0072604A /* GeoManager.swift in Sources */,
 				DF38F65E20B1FEB400ADE695 /* ComparisonHelper.swift in Sources */,
 				DFD4558320AB8A3E000F4AD0 /* UserManager.swift in Sources */,
-				DF462F6520B16F8F0045FDFB /* MapPin.swift in Sources */,
+				DF462F6520B16F8F0045FDFB /* VanAnnotation.swift in Sources */,
+				DF1F889620BB196200D9D087 /* VanAnnotationView.swift in Sources */,
 				DF38F66320B61C7500ADE695 /* LocationProtocol.swift in Sources */,
 				DF5441D420AF7A470072604A /* VanExtension.swift in Sources */,
 				DFD4557E20AA1F49000F4AD0 /* MapKitExtension.swift in Sources */,

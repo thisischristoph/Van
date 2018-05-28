@@ -59,6 +59,13 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         {
             return nil
         }
+        
+        if annotation is VanAnnotation {
+            
+        } else {
+            return nil
+        }
+        
         var annotationView = self.mapView.dequeueReusableAnnotationView(withIdentifier: "Pin")
         if annotationView == nil{
             annotationView = AnnotationView(annotation: annotation, reuseIdentifier: "Pin")
