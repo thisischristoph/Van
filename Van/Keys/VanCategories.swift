@@ -20,4 +20,12 @@ enum VanCategory: String {
             case .other: return #imageLiteral(resourceName: "iceCream")
         }
     }
+    
+    var description: String {
+        switch self {
+        case .iceCream: return "Ice Cream"
+        case .fishChips: return "Fish and Chips"
+        case .other: return "Other"
+        }
+    }
 }

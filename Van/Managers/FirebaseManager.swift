@@ -25,4 +25,14 @@ struct FirebaseManager {
             completion()
         }
     }
+    
+    func observeNearbyVans(completion: @escaping () -> Void) {
+        GeoManager.shared.locations.forEach { (location) in
+            FirebaseManager.shared.rootRef.child(VanKeys.vans.rawValue).child(location.key).observeSingleEvent(of: .value, with: { (snapshot) in
+                let van = Van(snapshot: snapshot)
+                VanManager.shared.updateVans(with: van)
+                completion()
+            })
+        }
+    }
 }

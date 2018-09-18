@@ -21,12 +21,14 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         super.viewDidLoad()
         mapView.delegate = self
         setupLocationManager()
-        FirebaseManager.shared.observeVans { }
+        FirebaseManager.shared.observeVans {
+        }
     }
     
     func setupLocationManager() {
         LocationManager.shared.locationManager.delegate = self
         LocationManager.shared.setup()
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -53,31 +55,6 @@ class ViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDele
         print("Tapped at lat: \(locationCoordinate.latitude) long: \(locationCoordinate.longitude)")
         VanManager.shared.addVan(with: CLLocation(latitude: locationCoordinate.latitude, longitude: locationCoordinate.longitude))
     }
-    
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        if annotation is MKUserLocation
-        {
-            return nil
-        }
-        
-        if annotation is VanAnnotation {
-            
-        } else {
-            return nil
-        }
-        
-        var annotationView = self.mapView.dequeueReusableAnnotationView(withIdentifier: "Pin")
-        if annotationView == nil{
-            annotationView = AnnotationView(annotation: annotation, reuseIdentifier: "Pin")
-            annotationView?.canShowCallout = false
-        }else{
-            annotationView?.annotation = annotation
-        }
-        annotationView?.image = #imageLiteral(resourceName: "iceCream")
-        return annotationView
-    }
-    
-    
     
 }
 

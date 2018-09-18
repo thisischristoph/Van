@@ -13,6 +13,7 @@ struct GeoManager {
     static var shared = GeoManager()
     
     var locations: [Location] = []
+    var completedInitialLoad = false
     
     let vanGeoRef: GeoFire = GeoFire(firebaseRef: FirebaseManager.shared.rootRef.child(GeoKeys.vanLocations.rawValue))
     
@@ -24,35 +25,46 @@ struct GeoManager {
         vanGeoRef.removeKey(uid)
     }
     
-    func updateLocations(with location: Location, track: Bool = true, completion: @escaping () -> Void) {
-        var updatedLocations = GeoManager.shared.locations.filter { (oldLocation) -> Bool in
-            oldLocation.key != location.key
-        }
-        if track {
-           updatedLocations.append(location)
-        }
-        GeoManager.shared.locations = updatedLocations
-        completion()
-    }
-    
     func observeVanLocations(for map: MKMapView, in radius: Double) {
         let query = vanGeoRef.query(at: LocationManager.shared.userLocation, withRadius: radius)
         query.observe(.keyEntered) { (key, location) in
-            self.update(map, key, location)
+            self.updateLocations(key: key, location: location)
+            self.observeVans(on: map)
         }
         query.observe(.keyExited) { (key, location) in
-            self.update(map, key, location, track: false)
+            self.updateLocations(key: key, location: location, track: false)
+            self.observeVans(on: map)
         }
         query.observe(.keyMoved) { (key, location) in
-            self.update(map, key, location)
+            self.updateLocations(key: key, location: location)
+            self.observeVans(on: map)
         }
+        query.observeReady {
+            GeoManager.shared.completedInitialLoad = true
+            self.observeVans(on: map)
+        }
+        
     }
     
-    func update(_ map: MKMapView, _ key: String, _ location: CLLocation, track: Bool = true) {
-        GeoManager.shared.updateLocations(with: Location(key: key, location: location), track: track) {
-            MapManager.shared.updateAnnotations {
+    func observeVans(on map: MKMapView) {
+        if GeoManager.shared.completedInitialLoad {
+            FirebaseManager.shared.observeNearbyVans {
                 MapManager.shared.update(map)
             }
         }
+    }
+    
+    func updateLocations(key: String?, location: CLLocation?, track: Bool = true) {
+        guard let key = key, let location = location else {
+            return
+        }
+        let newLocation = Location(key: key, location: location)
+        var updatedLocations = GeoManager.shared.locations.filter { (oldLocation) -> Bool in
+            oldLocation.key != newLocation.key
+        }
+        if track {
+            updatedLocations.append(newLocation)
+        }
+        GeoManager.shared.locations = updatedLocations
     }
 }

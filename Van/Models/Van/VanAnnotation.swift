@@ -10,19 +10,19 @@ import MapKit
 
 class VanAnnotation : NSObject, MKAnnotation {
     var coordinate: CLLocationCoordinate2D
-    var van: Van
+    var van: Van?
     
     
-    init(coordinate: CLLocationCoordinate2D, van: Van) {
+    init(coordinate: CLLocationCoordinate2D, van: Van?) {
         self.coordinate = coordinate
         self.van = van
     }
     
     var title: String? {
-        return van.name
+        return van?.name
     }
     
     var subtitle: String? {
-        return van.category
+        return van?.category.description
     }
 }

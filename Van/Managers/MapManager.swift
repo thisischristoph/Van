@@ -16,16 +16,30 @@ struct MapManager {
     var annotations: [MKAnnotation] = []
     
     func update(_ map: MKMapView) {
-            let sequence = diff(map.annotations, MapManager.shared.annotations, with: { (map, new) -> Bool in
-                map.title == new.title &&
+//        let sequence = diff(map.annotations, MapManager.shared.annotations, with: { (map, new) -> Bool in
+//            map.title == new.title &&
+//                map.subtitle == new.subtitle &&
+//                map.coordinate.latitude == new.coordinate.latitude &&
+//                map.coordinate.longitude == new.coordinate.longitude
+//        })
+        var newAnnotations: [MKAnnotation] = []
+        GeoManager.shared.locations.forEach { (location) in
+            if let van = VanManager.shared.getVan(for: location.key) {
+                newAnnotations.append(VanAnnotation(coordinate: location.location.coordinate, van: van))
+            }
+        }
+        MapManager.shared.annotations = newAnnotations
+        let sequence = diff(map.annotations, MapManager.shared.annotations, with: { (map, new) -> Bool in
+            map.title == new.title &&
                 map.subtitle == new.subtitle &&
                 map.coordinate.latitude == new.coordinate.latitude &&
                 map.coordinate.longitude == new.coordinate.longitude
-            })
-            map.removeAnnotations(sequence.removed)
-            map.addAnnotations(sequence.inserted)
-
-
+        })
+        map.removeAnnotations(sequence.removed)
+        map.addAnnotations(sequence.inserted)
+        
+        
+        
     }
     
     func updateAnnotations(completion: @escaping () -> Void) {
@@ -33,6 +47,9 @@ struct MapManager {
         GeoManager.shared.locations.forEach { (location) in
             if let van = VanManager.shared.getVan(for: location.key) {
                 let annotation = VanAnnotation(coordinate: location.location.coordinate, van: van)
+                newAnnotations.append(annotation)
+            } else {
+                let annotation = VanAnnotation(coordinate: location.location.coordinate, van: nil)
                 newAnnotations.append(annotation)
             }
         }

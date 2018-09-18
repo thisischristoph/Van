@@ -45,4 +45,12 @@ struct VanManager {
             van.key == key
         }).first
     }
+    
+    func updateVans(with van: Van) {
+        var updatedVans = VanManager.shared.vans.filter { (oldVan) -> Bool in
+            oldVan.key != van.key
+        }
+        updatedVans.append(van)
+        VanManager.shared.vans = updatedVans
+    }
 }
